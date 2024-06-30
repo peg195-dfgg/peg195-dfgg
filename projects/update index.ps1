@@ -1,3 +1,5 @@
+#这是一个用于生成项目索引的powershell脚本
+
 $output = @()
 
 Get-ChildItem -Directory | ForEach-Object {
@@ -10,4 +12,8 @@ Get-ChildItem -Directory | ForEach-Object {
     $output += $folderInfo
 }
 
-$output | ConvertTo-Json | Out-File -FilePath output.json
+$outputJson = $output | ConvertTo-Json
+$outputPath = "..\res\projects.json"
+$outputJson | Out-File -FilePath $outputPath
+
+Write-Host "输出已保存到: $outputPath"
