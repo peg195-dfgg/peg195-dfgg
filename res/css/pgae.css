@@ -15,6 +15,10 @@
     /* 鼠标离开时的反向旋转动画 */
 }
 
+iframe {
+    border: unset;
+}
+
 article {
     padding: 10px;
     border-radius: 10px;
@@ -22,6 +26,10 @@ article {
 
 #page-2 .item {
     padding-bottom: 8px;
+}
+
+#page-3 button {
+    margin-bottom: 10px;
 }
 
 @media (max-width: 1200px) {

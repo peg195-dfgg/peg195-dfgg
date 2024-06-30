@@ -24,6 +24,7 @@ $(document).on('pjax:end', function () {
     NProgress.done();
 });
 
+
 // 使用事件委托绑定点击事件
 $(document).on('click', '.mdui-tab a', function (event) {
     event.preventDefault(); // 阻止默认点击行为

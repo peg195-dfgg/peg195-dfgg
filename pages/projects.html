@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>小枫_QWQの主页 - 我的项目</title>
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link href="https://cdn.bootcdn.net/ajax/libs/mdui/1.0.2/css/mdui.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcdn.net/ajax/libs/mdui/1.0.2/css/mdui.css" rel="stylesheet">
     <link rel="stylesheet" href="/res/css/style.css">
     <link rel="stylesheet" href="/res/css/rest.css">
     <link rel="stylesheet" href="/res/css/pgae.css">
@@ -39,7 +39,9 @@
         <main class="mdui-container">
             <section id="page-3" class="mdui-center box-shadow animate__animated">
                 <article id="projects" class="mdui-typo">
-                    <p>正在制作中……</p>
+                    <button class="mdui-btn mdui-btn-raised" onclick="iframe.contentWindow.history.back();"><i
+                            class="mdui-icon material-icons">&#xe5c4;</i>返回上一页</button>
+                    <iframe height="600vh" id="iframe" width="100%" src="/projects/index.html"></iframe>
                 </article>
             </section>
         </main>

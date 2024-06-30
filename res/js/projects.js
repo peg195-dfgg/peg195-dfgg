@@ -1,5 +1,5 @@
 // 使用 Fetch API 获取 INDEX.JSON 文件内容
-fetch('INDEX.JSON')
+fetch('/res/projects.json')
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok ' + response.statusText);
