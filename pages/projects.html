@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>小枫_QWQの主页 - 我的项目</title>
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link href="https://cdn.bootcdn.net/ajax/libs/mdui/1.0.2/css/mdui.css" rel="stylesheet">
+    <link href="https://cdn.bootcdn.net/ajax/libs/mdui/1.0.2/css/mdui.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/res/css/style.css">
     <link rel="stylesheet" href="/res/css/rest.css">
     <link rel="stylesheet" href="/res/css/pgae.css">
@@ -47,11 +47,20 @@
         </main>
     </div>
     <footer id="footer">加载中……</footer>
+    <div id="music-player-container"></div>
+    <script src="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js"></script>
     <script src="https://cdn.bootcdn.net/ajax/libs/mdui/1.0.2/js/mdui.min.js"></script>
     <script src="https://cdn.bootcdn.net/ajax/libs/marked/9.0.0/marked.min.js"></script>
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery.pjax/2.0.1/jquery.pjax.min.js"></script>
+    <script src="/res/js/music-player.js"></script>
     <script src="/res/js/main.js"></script>
     <script src="/res/js/page.js"></script>
+    <script>
+        // 新建类
+        const musicPlayer = new MusicPlayerSettings();
+        // 调用主函数
+        musicPlayer.main();
+    </script>
 </body>
 
 </html>
